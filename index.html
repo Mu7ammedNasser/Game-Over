@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GAMEWAY</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Comfortaa:wght@300..700&family=Nerko+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- start nav bar  -->
+    <nav class="navbar my-5 navbar-expand-lg bg-body-tertiary">
+      <div class="container">
+        <h5 class="navbar-brand d-flex align-items-center" href="#">
+          <img src="media/logo.png" class="logo" alt="logo" />
+          GAME REVIEWS
+        </h5>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">MMORPG</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SHOOTER</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SAILING</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PERMADEATH</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">SUPERHERO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PIXEL</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end nav bar  -->
+
+    <!-- start GAMES-content  -->
+    <section class="games-content">
+      <div class="container">
+        <div class="row" id="myCards"></div>
+      </div>
+    </section>
+    <!-- end GAMES-content  -->
+
+    <!-- start details  -->
+    <section class="games-details d-none">
+      <div class="container position-relative">
+        <h2 class="my-3">Game Details</h2>
+        <div class="d-flex flex-column flex-lg-row gap-lg-5 mt-5" id="game-details">
+          
+        </div>
+        <i class="exit-icon fa-solid fa-xmark"></i>
+      </div>
+    </section>
+    <!-- end details  -->
+
+    <div class="loading d-none" id="loading">
+      <div class="loading-box">
+        <span class="loader"></span>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
