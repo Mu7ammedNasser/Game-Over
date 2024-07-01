@@ -156,8 +156,9 @@ body {
   position: fixed;
   z-index: 3000;
   color: white;
-  min-height: 100vh; /* Ensures the section is at least 100vh */
-  overflow-y: auto; /* Makes the section scrollable */
+  min-height: 100vh; 
+  overflow-y: auto; 
+  overflow-x: hidden;
 }
 
 .games-details .container .game-details p span {
